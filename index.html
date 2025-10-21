@@ -172,6 +172,8 @@
             display: flex;
             gap: 1rem;
             margin-top: 1.5rem;
+            flex-wrap: wrap; 
+            justify-content: center; 
         }
 
         .btn {
@@ -185,6 +187,9 @@
             color: #1a202c;
             background-color: transparent;
             font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .btn:hover {
@@ -344,6 +349,12 @@
         .project-card:hover .btn:hover {
             background-color: white;
             color: #1a202c;
+        }
+        
+        /* New styles for buttons inside project cards */
+        .project-card .btn {
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
         }
 
         .project-card img {
@@ -584,7 +595,7 @@
 
             <!-- Project Card 1: ASL Translator -->
             <div class="project-card">
-                <img src="https://placehold.co/600x400/009dff/FFFFFF?text=AI+Sign+Language\nTranslator" alt="AI Sign Language Translator Project">
+                <img src="asl-translator-screenshot.jpg" alt="AI Sign Language Translator Project Screenshot" onerror="this.onerror=null;this.src='https://placehold.co/600x400/009dff/FFFFFF?text=AI+Sign+Language\nTranslator';">
                 <div class="project-content">
                     <h3>AI Sign Language Translator</h3>
                     <p>A real-time, two-way communication tool that translates American Sign Language (ASL) into spoken text and vice-versa. This project showcases the full lifecycle of an AI application, from data collection and model training to front-end integration.</p>
@@ -596,15 +607,15 @@
                         <span class="tech-tag">MediaPipe</span>
                     </div>
                     <div class="project-links btn-group">
-                        <a href="https://mango-beach-02258c21e.3.azurestaticapps.net" class="btn btn-primary">Live Demo</a>
-                        <a href="https://github.com/Thabo301" target="_blank" class="btn">Source Code</a>
+                        <a href="https://mango-beach-02258c21e.3.azurestaticapps.net" class="btn btn-primary"><i class='bx bx-link-external'></i>Live Demo</a>
+                        <a href="https://github.com/Thabo301" target="_blank" class="btn"><i class='bx bxl-github'></i>Source Code</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project Card 2: AI Barbershop Booker -->
             <div class="project-card">
-                <img src="https://placehold.co/600x400/ff00ff/FFFFFF?text=AI+Barbershop\nBooker" alt="AI Barbershop Booker Project">
+                <img src="barbershop-dashboard-screenshot.jpg" alt="AI Barbershop Booker Project Screenshot" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ff00ff/FFFFFF?text=AI+Barbershop\nBooker';">
                 <div class="project-content">
                     <h3>AI Barbershop Booker</h3>
                     <p>An end-to-end data engineering and AI project that digitizes a traditional paper appointment book. Using AI Document Intelligence to extract handwritten data, the project analyzes historical appointments to find business patterns and uses those insights to power an intelligent, natural language booking system.</p>
@@ -616,8 +627,8 @@
                         <span class="tech-tag">Data Analysis</span>
                     </div>
                      <div class="project-links btn-group">
-                        <a href="barbershop-project.html" class="btn btn-primary">View Case Study</a>
-                        <a href="https://github.com/Thabo301" target="_blank" class="btn">Source Code</a>
+                        <a href="barbershop-project.html" class="btn btn-primary"><i class='bx bx-book-content'></i>View Project Plan</a>
+                        <a href="https://github.com/Thabo301" target="_blank" class="btn"><i class='bx bxl-github'></i>Source Code</a>
                     </div>
                 </div>
             </div>
@@ -635,7 +646,7 @@
                         <span class="tech-tag">GitHub Actions</span>
                     </div>
                      <div class="project-links btn-group">
-                        <a href="https://github.com/Thabo301/Azure-Governance-with-Iac" target="_blank" class="btn">Source Code</a>
+                        <a href="https://github.com/Thabo301/Azure-Governance-with-Iac" target="_blank" class="btn"><i class='bx bxl-github'></i>Source Code</a>
                     </div>
                 </div>
             </div>
@@ -653,8 +664,8 @@
                         <span class="tech-tag">GitHub Actions</span>
                     </div>
                      <div class="project-links btn-group">
-                        <a href="#about" class="btn btn-primary">You're Here!</a>
-                        <a href="https://github.com/Thabo301/Azure-Hosted-Website-Portfolio" target="_blank" class="btn">Source Code</a>
+                        <a href="#about" class="btn btn-primary"><i class='bx bx-home-alt'></i>You're Here!</a>
+                        <a href="https://github.com/Thabo301/Azure-Hosted-Website-Portfolio" target="_blank" class="btn"><i class='bx bxl-github'></i>Source Code</a>
                     </div>
                 </div>
             </div>
@@ -667,7 +678,7 @@
         <div class="contact-container">
             <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
             <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
-            <form action="https://formspree.io/f/https://formspree.io/f/mjkopzrr" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/mjkopzrr" method="POST" class="contact-form">
                 <div class="input-group">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
